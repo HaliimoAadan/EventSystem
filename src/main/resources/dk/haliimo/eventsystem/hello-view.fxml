@@ -27,7 +27,7 @@
             </ImageView>
             <TextField alignment="CENTER" layoutX="288.0" layoutY="6.0" prefHeight="46.0" prefWidth="301.0" style="-fx-background-color: #D9D9D9; -fx-text-fill: #65558F;" text="EASV EVENTS">
                <font>
-                  <Font name="Rockwell Italic" size="25.0" />
+                  <Font name="Gill Sans Ultra Bold Condensed" size="29.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
