@@ -1,0 +1,6 @@
+/*.mainWindow
+{
+        -fx-background-position: center;
+        -fx-background-image: url("@Pictures/bar.jpg");
+        -fx-background-repeat: stretch;
+}
