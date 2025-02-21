@@ -16,18 +16,18 @@
             <Image url="@Pictures/bar.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="30.0" layoutY="67.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-border-color: black; -fx-background-color: #65558F;" text="+ Add New Event" textFill="WHITE">
+      <Button layoutX="30.0" layoutY="67.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" styleClass="addNewEventBtn" text="+ Add New Event" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Button>
-      <AnchorPane layoutY="-8.0" prefHeight="63.0" prefWidth="1011.0" style="-fx-background-color: #D9D9D9;">
+      <AnchorPane layoutY="-8.0" prefHeight="63.0" prefWidth="1011.0" styleClass="header">
          <children>
             <ImageView fitHeight="35.0" fitWidth="137.0" layoutX="846.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Pictures/login...png" />
                </image>
             </ImageView>
-            <TextField alignment="CENTER" layoutX="355.0" layoutY="8.0" prefHeight="46.0" prefWidth="301.0" style="-fx-background-color: #D9D9D9; -fx-text-fill: #65558F;" text="E A S V   E V E N T S">
+            <TextField alignment="CENTER" layoutX="355.0" layoutY="8.0" prefHeight="46.0" prefWidth="301.0" styleClass="name" text="E A S V   E V E N T S">
                <font>
                   <Font name="Gill Sans UltraBold" size="25.0" />
                </font>
@@ -51,9 +51,9 @@
       </ImageView>
       <Button layoutX="819.0" layoutY="70.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="20.0" visible="false" />
       <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="60.0" visible="false" />
-      <AnchorPane layoutX="28.0" layoutY="120.0" opacity="0.71" prefHeight="407.0" prefWidth="314.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 30; -fx-border-color: black; -fx-border-radius: 30;">
+      <AnchorPane layoutX="28.0" layoutY="120.0" opacity="0.71" prefHeight="407.0" prefWidth="314.0" styleClass="box" stylesheets="@Style.css">
          <children>
-            <AnchorPane layoutX="17.0" layoutY="182.0" prefHeight="130.0" prefWidth="280.0" style="-fx-background-color: black;">
+            <AnchorPane layoutX="17.0" layoutY="182.0" prefHeight="130.0" prefWidth="280.0" styleClass="infoBox" stylesheets="@Style.css">
                <children>
                   <Text fill="WHITE" layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information about the event">
                      <font>
@@ -80,7 +80,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <Button layoutX="111.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: E8DEF8; -fx-border-color: grey;">
+            <Button layoutX="111.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" styleClass="deleteEventBtn">
                <graphic>
                   <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -89,7 +89,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="166.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: E8DEF8; -fx-border-color: grey;">
+            <Button layoutX="166.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" styleClass="editEventBtn">
                <graphic>
                   <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -98,12 +98,12 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="1.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" style="-fx-background-color: E8DEF8; -fx-border-color: grey;" text="+ Ticket">
+            <Button layoutX="1.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" styleClass="createTicketBtn" text="+ Ticket">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button layoutX="222.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" style="-fx-background-color: E8DEF8; -fx-border-color: grey;" text="✓ Assign">
+            <Button layoutX="222.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" styleClass="assignBtn" text="✓ Assign">
                <font>
                   <Font size="15.0" />
                </font>
@@ -115,9 +115,9 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="356.0" layoutY="120.0" opacity="0.71" prefHeight="407.0" prefWidth="314.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 30; -fx-border-color: black; -fx-border-radius: 30;">
+      <AnchorPane layoutX="356.0" layoutY="120.0" opacity="0.71" prefHeight="407.0" prefWidth="314.0" styleClass="box">
          <children>
-            <AnchorPane layoutX="17.0" layoutY="182.0" prefHeight="130.0" prefWidth="280.0" style="-fx-background-color: black;">
+            <AnchorPane layoutX="17.0" layoutY="182.0" prefHeight="130.0" prefWidth="280.0" styleClass="infoBox" stylesheets="@Style.css">
                <children>
                   <Text fill="WHITE" layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information about the event">
                      <font>
@@ -144,7 +144,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <Button layoutX="111.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: E8DEF8; -fx-border-color: grey;">
+            <Button layoutX="111.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" styleClass="deleteEventBtn">
                <graphic>
                   <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -153,7 +153,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="166.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: E8DEF8; -fx-border-color: grey;">
+            <Button layoutX="166.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" styleClass="editEventBtn">
                <graphic>
                   <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -162,12 +162,12 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="1.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" style="-fx-background-color: E8DEF8; -fx-border-color: grey;" text="+ Ticket">
+            <Button layoutX="1.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" styleClass="createTicketBtn" text="+ Ticket">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button layoutX="222.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" style="-fx-background-color: E8DEF8; -fx-border-color: grey;" text="✓ Assign">
+            <Button layoutX="222.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" styleClass="assignBtn" text="✓ Assign">
                <font>
                   <Font size="15.0" />
                </font>
@@ -179,9 +179,9 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="683.0" layoutY="120.0" opacity="0.71" prefHeight="407.0" prefWidth="314.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 30; -fx-border-color: black; -fx-border-radius: 30;">
+      <AnchorPane layoutX="683.0" layoutY="120.0" opacity="0.71" prefHeight="407.0" prefWidth="314.0" styleClass="box">
          <children>
-            <AnchorPane layoutX="17.0" layoutY="182.0" prefHeight="130.0" prefWidth="280.0" style="-fx-background-color: black;">
+            <AnchorPane layoutX="17.0" layoutY="182.0" prefHeight="130.0" prefWidth="280.0" styleClass="infoBox" stylesheets="@Style.css">
                <children>
                   <Text fill="WHITE" layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information about the event">
                      <font>
@@ -208,7 +208,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <Button layoutX="111.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: E8DEF8; -fx-border-color: grey;">
+            <Button layoutX="111.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" styleClass="deleteEventBtn">
                <graphic>
                   <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -217,7 +217,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="166.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: E8DEF8; -fx-border-color: grey;">
+            <Button layoutX="166.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" styleClass="editEventBtn">
                <graphic>
                   <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -226,12 +226,12 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="1.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" style="-fx-background-color: E8DEF8; -fx-border-color: grey;" text="+ Ticket">
+            <Button layoutX="1.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" styleClass="createTicketBtn" text="+ Ticket">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button layoutX="222.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" style="-fx-background-color: E8DEF8; -fx-border-color: grey;" text="✓ Assign">
+            <Button layoutX="222.0" layoutY="337.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" styleClass="assignBtn" text="✓ Assign">
                <font>
                   <Font size="15.0" />
                </font>
